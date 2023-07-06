@@ -932,18 +932,7 @@ sect {
   filter: grayscale(0) contrast(100%);
 }
 
-client {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  min-height: 100vh;
-}
 
-.clients-container {
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-}
 
 client {
   display: flex;
