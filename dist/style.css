@@ -1,4 +1,5 @@
 :root {
+  --color:#17594A;
   --color-white-100: hsl(206, 0%, 100%);
   --color-white-200: hsl(206, 0%, 90%);
   --color-white-300: hsl(206, 0%, 80%);
@@ -15,11 +16,11 @@
   --color-blue-500: hsl(215, 83%, 53%);
   --color-blue-600: hsl(215, 76%, 48%);
   --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-     0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-     0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 *,
@@ -366,7 +367,8 @@ video {
   margin-right: 0.5rem;
 }
 
-.switch-light, .switch-dark {
+.switch-light,
+.switch-dark {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -730,7 +732,7 @@ sec {
 }
 
 .service-container h1::after {
-  content: '';
+  content: "";
   background: #303ef7;
   width: 100px;
   height: 5px;
@@ -776,7 +778,6 @@ sec {
 .service:hover i {
   color: #fff;
 }
-
 
 /* end service section */
 
@@ -860,7 +861,11 @@ sect {
 
 .member-details > div:after {
   content: "";
-  background-image: linear-gradient(45deg, rgba(228, 82, 69, 0.8) 50%, transparent 50%);
+  background-image: linear-gradient(
+    45deg,
+    rgba(228, 82, 69, 0.8) 50%,
+    transparent 50%
+  );
   position: absolute;
   top: 0;
   bottom: 0;
@@ -998,8 +1003,6 @@ sect {
   filter: grayscale(0) contrast(100%);
 }
 
-
-
 client {
   display: flex;
   flex-direction: column;
@@ -1014,6 +1017,203 @@ client {
 }
 
 /* end of clients */
+
+/* Contact section */
+
+.sec-title {
+  position: relative;
+  padding-bottom: 40px;
+}
+.sec-title .title {
+  position: relative;
+  color: #00b8ca;
+  font-size: 18px;
+  font-weight: 700;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.sec-title .title:before {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 7px;
+  width: 40px;
+  height: 1px;
+  background-color: #bbb;
+}
+.sec-title h2 {
+  position: relative;
+  color: #252525;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5em;
+  display: block;
+}
+.sec-title.light h2 {
+  color: #fff;
+}
+
+
+.contact-page-section {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+}
+.contact-page-section .inner-container {
+  position: relative;
+  z-index: 1;
+  background-color: #00b8ca;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+.contact-page-section .form-column {
+  position: relative;
+  padding: 0 0 0 15px;
+}
+.contact-page-section .form-column .inner-column {
+  position: relative;
+  padding: 60px 45px 30px;
+  background-color: #fff;
+}
+.contact-page-section .info-column {
+  position: relative;
+}
+.contact-page-section .info-column .inner-column {
+  position: relative;
+  padding: 60px 35px;
+}
+.contact-page-section .info-column h2 {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin-bottom: 45px;
+}
+.contact-page-section .info-column .list-info {
+  position: relative;
+  margin-bottom: 60px;
+}
+.contact-page-section .info-column .list-info li {
+  position: relative;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.8em;
+  padding-left: 45px;
+}
+.contact-page-section .info-column .list-info li:last-child {
+  margin-bottom: 0;
+}
+.contact-page-section .info-column .list-info li i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: #fff;
+  font-size: 30px;
+}
+.contact-form {
+  position: relative;
+}
+.contact-form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 60px;
+  color: #222;
+  font-size: 14px;
+  line-height: 38px;
+  padding: 10px 30px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #00b8ca;
+}
+.contact-form textarea {
+  height: 250px;
+  resize: none;
+}
+.contact-form .theme-btn {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-transform: capitalize;
+  padding: 16px 39px;
+  border: 2px solid #00b8ca;
+  font-family: Arimo, sans-serif;
+  background: #00b8ca;
+  display: inline-block;
+  position: relative;
+  line-height: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+.contact-form .theme-btn:hover {
+  color: #00b8ca;
+  border-color: #00b8ca;
+  background: 0 0;
+}
+.contact-form input.error,
+.contact-form select.error,
+.contact-form textarea.error {
+  border-color: red !important;
+}
+.contact-form label.error {
+  display: block;
+  line-height: 24px;
+  padding: 5px 0 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: red;
+  font-weight: 500;
+}
+.social-icon-four {
+  position: relative;
+}
+.social-icon-four li {
+  position: relative;
+  margin-right: 18px;
+  display: inline-block;
+}
+.social-icon-four li.follow {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 20px;
+}
+.social-icon-four li a {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.social-icon-four li a:hover {
+  color: #222;
+}
+
+/* End of contact */
+
 /* footer */
 .footer-section {
   background: #151414;
@@ -1101,15 +1301,15 @@ client {
 }
 
 .facebook-bg {
-  background: #3B5998;
+  background: #3b5998;
 }
 
 .twitter-bg {
-  background: #55ACEE;
+  background: #55acee;
 }
 
 .google-bg {
-  background: #DD4B39;
+  background: #dd4b39;
 }
 
 .footer-widget-heading h3 {
@@ -1154,8 +1354,8 @@ client {
 .subscribe-form input {
   width: 100%;
   padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
   color: #fff;
 }
 
