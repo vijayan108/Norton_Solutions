@@ -494,7 +494,7 @@ sec {
 .sec-title {
   position: relative;
   z-index: 1;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .sec-title .title {
@@ -606,7 +606,7 @@ sec {
 }
 
 .about-section .sec-title {
-  margin-bottom: 45px;
+  margin-bottom: 0px;
 }
 
 .about-section .content-column {
@@ -1142,8 +1142,10 @@ client {
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
-  border-color: #00b8ca;
+  border-color: #9000e4;
 }
+
+
 .contact-form textarea {
   height: 250px;
   resize: none;
