@@ -1,5 +1,5 @@
 :root {
-  --color:#1B9C85;
+  --color:#00ff3a;
   --color-white-100: hsl(206, 0%, 100%);
   --color-white-200: hsl(206, 0%, 90%);
   --color-white-300: hsl(206, 0%, 80%);
@@ -202,7 +202,7 @@ video {
 
 .brand {
   font-family: inherit;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.25;
   margin-right: auto;
@@ -560,6 +560,12 @@ sec {
   margin-bottom: 12px;
 }
 
+.darkmode .list-style-one li {
+  color: var(--color-white-100);
+}
+.darkmode .team-details{
+  color: var(--color-white-100);
+}
 .list-style-one li:before {
   content: "\f058";
   position: absolute;
